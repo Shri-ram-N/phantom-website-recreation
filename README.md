@@ -1,4 +1,3 @@
-cat > README.md <<'EOF'
 # Phantom Website Recreation
 
 A front-end recreation of the Phantom website design using HTML and CSS.
