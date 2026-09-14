@@ -406,125 +406,328 @@ form{
     color: #f27f9a;
 }
 
-@media (max-width:768px){
-    header{
-    height: 80px;
-    padding-right: 0;
-}
-    .img-effect {
-    height: 60px;
-    width: 60px;
-}
-    .nav-logo{
-    font-size: 50px;
-}
+```css
+@media (max-width: 768px) {
 
-    .page{
-        height: 2440px;
-        padding: 14% 3% 0 3%
-}
-    .title{
-    height: 13%;
-    margin: 0 0 0 2%;
-}   
-    .title-heading{
-    font-size: 2.6em;
-    width: 95%;
-    margin: 4% 0 0 0;
-}
-    .title-para{
-    font-size: 1em;
-}
-    .grid-parent{
-    height: 1917px;
-    grid-template: repeat(6, 1fr) / repeat(2, 1fr);
-    gap: 30px;
-}
-    footer{
-        flex-direction: column-reverse;
-}
-    .footer-child1{
-        width:96%;
-        padding: 1% 0 0 4%;
+    header {
+        height: 80px;
+        padding-right: 15px;
     }
-    .footer-child2{
+
+    .img-effect {
+        height: 60px;
+        width: 60px;
+    }
+
+    .nav-logo {
+        font-size: 50px;
+    }
+
+    .page {
+        height: auto;
+        min-height: 0;
+        padding: 100px 5% 80px;
+    }
+
+    .title {
+        height: auto;
+        margin: 0 0 50px 0;
+    }
+
+    .title-logo-image {
+        height: auto;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    .title-text {
+        font-size: 18px;
+        letter-spacing: 4px;
+        margin-left: 5px;
+    }
+
+    .title-heading {
+        font-size: 2.5em;
         width: 100%;
-        height: 21%;
-        padding: 0 0 0 4%;
+        line-height: 1.3;
+        margin-top: 25px;
     }
-    footer{
-        justify-content: space-evenly;
+
+    .title-para {
+        font-size: 1.05em;
+        line-height: 1.8;
+        margin-top: 20px;
     }
-    .footer-head{
-        margin: 1% 0 0 4%;
+
+    .grid-parent {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: none;
+        gap: 25px;
+        margin: 0;
+    }
+
+    .grid-parent > section {
+        min-height: 280px;
+        position: relative;
+    }
+
+    .name {
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+
+    .box-para {
+        font-size: 1rem;
+        line-height: 1.5;
+        width: 85%;
+        margin-top: 50px;
+    }
+
+    .grid-parent > section:hover .name {
+        transform: translateY(-30px);
+    }
+
+    footer {
+        height: auto;
+        min-height: 700px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding: 50px 5%;
+    }
+
+    .footer-child1 {
+        width: 100%;
+        height: auto;
+        padding: 40px 0 0;
+    }
+
+    .footer-child2 {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    form {
+        height: auto;
+    }
+
+    .footer-head {
+        margin: 0;
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+
+    .head-text-2 {
+        margin-left: 5px;
+    }
+
+    .name-email {
+        margin: 30px 0 0;
+    }
+
+    .input-1 {
+        width: 42%;
+        height: 45px;
+        margin-left: 10px;
         font-size: 18px;
     }
-    .ic{
-        padding: 15px 15px;
+
+    .input-2 {
+        width: 90%;
+        height: 90px;
+        margin: 35px 0 0;
+        font-size: 18px;
     }
-    .logos{
-    height: 70%;
-    padding: 20px;
-}
-    .name-email{
-    margin: 3% 0 0 0;
-}
-    .submit-btn{
-    width: 15%;
-    margin: 4%;
-}
-    .input-2{
-    margin: 4% 0 0 4.5%;
-    width: 85%;
-}
-    .copy-rights{
-        margin: 5% 0 0 4%;
+
+    .submit-btn {
+        width: 150px;
+        height: 50px;
+        margin: 30px 0 0;
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+
+    .copy-rights {
+        margin: 40px 0 0;
+        font-size: 14px;
+    }
+
+    .logos {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .ic {
+        padding: 12px;
+        font-size: 17px;
+        margin: 5px;
     }
 }
 
-@media (max-width:375px){
-    .title-heading{
-    font-size: 1.9em;
-    width: 91%;
-}
-    .grid-parent{
-    height: 445vh;
-    grid-template: repeat(12, 1fr) / 1fr;
-    gap: 15px;
-    margin-top: 100px;
-}
-    .title{
-    height: 6%;
-    margin: 0 0 0 2%;
-}   
-    .page{
-        height: 500vh;
-        padding: 14% 3% 0 3%
-}
-    .logos{
-    padding: 20px 0 0 0;
-    height: 135px;
-    width: 90%;
-}
-    .ic{
-        font-size: 13px;
-        padding: 6px;
+@media (max-width: 480px) {
+
+    header {
+        height: 70px;
+        padding-right: 10px;
     }
-    .input-1{
-        margin: 20px 0 0 13px;
-        width: 90%;
-    }    
-    .input-2{
-        width: 90%;
+
+    .img-effect {
+        height: 50px;
+        width: 50px;
     }
-    .submit-btn{
-        width: 90%;
-        margin: 40px 0 0 14px;
-        height: 43px;
+
+    .nav-logo {
+        font-size: 42px;
+    }
+
+    .page {
+        padding: 90px 5% 60px;
+    }
+
+    .title {
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        height: 28px;
+    }
+
+    .title-text {
         font-size: 16px;
+        letter-spacing: 3px;
     }
-    .copy-rights{
-        margin: 16% 0 0 5%;
-        font-size: 15px;
+
+    .title-heading {
+        font-size: 2em;
+        width: 100%;
+        line-height: 1.3;
+        margin-top: 20px;
+    }
+
+    .title-para {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-top: 18px;
+    }
+
+    .grid-parent {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .grid-parent > section {
+        min-height: 300px;
+    }
+
+    .name {
+        font-size: 19px;
+        letter-spacing: 4px;
+    }
+
+    .box-para {
+        font-size: 0.95rem;
+        width: 85%;
+        margin-top: 45px;
+    }
+
+    footer {
+        padding: 45px 5%;
+        min-height: 750px;
+    }
+
+    .footer-child1 {
+        padding-top: 35px;
+    }
+
+    .footer-head {
+        font-size: 16px;
+        letter-spacing: 4px;
+        line-height: 1.5;
+    }
+
+    .name-email {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .input-1 {
+        width: 100%;
+        margin: 10px 0 0;
+        font-size: 17px;
+    }
+
+    .input-2 {
+        width: 100%;
+        margin: 30px 0 0;
+        font-size: 17px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        height: 45px;
+        margin: 30px 0 0;
+        font-size: 14px;
+    }
+
+    .logos {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .ic {
+        padding: 8px;
+        font-size: 14px;
+        margin: 3px;
+    }
+
+    .copy-rights {
+        margin: 35px 0 0;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .page {
+        padding: 85px 4% 50px;
+    }
+
+    .title-heading {
+        font-size: 1.8em;
+    }
+
+    .title-para {
+        font-size: 0.95rem;
+    }
+
+    .grid-parent > section {
+        min-height: 270px;
+    }
+
+    .name {
+        font-size: 17px;
+        letter-spacing: 3px;
+    }
+
+    .box-para {
+        font-size: 0.9rem;
+    }
+
+    .footer-head {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .ic {
+        padding: 7px;
+        font-size: 13px;
     }
 }
